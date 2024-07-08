@@ -7,9 +7,6 @@ import {
 
 import './App.css'
 import Home from "./components/Home";
-import Speakers from "./components/Speakers";
-import Schedule from "./components/Schedule";
-import Navbar from "./components/Navbar";
 
 function App() {
 
@@ -17,8 +14,7 @@ function App() {
     createRoutesFromElements(
       <>
       <Route path="/" element={<Home/>}/>
-      <Route path='/speakers' element={<Speakers/>}/>
-      <Route path="/schedule" element={<Schedule/>}/>
+      
       </>
     )
   )
