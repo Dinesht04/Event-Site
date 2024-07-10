@@ -44,9 +44,18 @@ const Home = () =>{
                     </div>
                     
                     <div id='right' className="grid mx-auto mt-32 p-2 md:m-8 md:p-8 ">
-                        <img src="/Hero-img1.png" alt="Image 1" className="row-start-1 row-end-4 col-start-1 col-end-5" />
-                        <img src="/Hero-img2.png" alt="Image 2" className="col-start-3 col-end-6 row-start-3 row-end-5 " />
-                    
+                        <style>
+                            {`
+                                @media (max-width: 768px) {
+                                    .responsive-img {
+                                        width: 100% !important; /* Forces images to stretch to the container's width */
+                                        height: auto !important; /* Maintains aspect ratio */
+                                    }
+                                }
+                            `}
+                        </style>
+                        <img src="/Hero-img1.png" alt="Image 1" style={{ width: '80%', height: 'auto' }} className="row-start-1 row-end-4 col-start-1 col-end-5 responsive-img" />
+                        <img src="/Hero-img2.png" alt="Image 2" style={{ width: '90%', height: 'auto' }} className="col-start-3 col-end-6 row-start-3 row-end-5 responsive-img" />
                     </div>
                 </div>
             </div>
