@@ -11,9 +11,10 @@ const Home = () =>{
                 <div id='container' className='flex '>
                     <div id='left'>
                         <div id='logo' className='flex w-1 mt-2 md:mx-8 md:p-8 max-w-fit'>
-                      <button onClick={()=>{
-                                window.location.href = 'https://blockchain-club-vitb.vercel.app/';
-                            }}  ><Logo /></button>  
+                                <button onClick={()=>{
+                                    window.location.href = 'https://blockchain-club-vitb.vercel.app/';
+                                }}  ><Logo /></button>  
+                            
                         </div>
                         <div className='flex'>
                             <div id='text-content' className='flex flex-col ml-4'>
@@ -42,20 +43,23 @@ const Home = () =>{
                         </div>
                         
                     </div>
-                    
-                    <div id='right' className="grid mx-auto mt-32 p-2 md:m-8 md:p-8 ">
-                        <style>
-                            {`
-                                @media (max-width: 768px) {
-                                    .responsive-img {
-                                        width: 100% !important; /* Forces images to stretch to the container's width */
-                                        height: auto !important; /* Maintains aspect ratio */
+                    <div className='flex flex-col '>
+                        <img src='/vitLogo.png' alt='vitLogo' className='w-24 self-end m-2 p-2 md:w-40 md:my-8 md:mr-16 '/>
+                        <div id='right' className="grid mx-auto mt-20 p-2 md:m-8 md:p-8 relative ">
+                            <style>
+                                {`
+                                    @media (max-width: 768px) {
+                                        .responsive-img {
+                                            width: 100% !important; /* Forces images to stretch to the container's width */
+                                            height: auto !important; /* Maintains aspect ratio */
+                                        }
                                     }
-                                }
-                            `}
-                        </style>
-                        <img src="/Hero-img1.png" alt="Image 1" style={{ width: '80%', height: 'auto' }} className="row-start-1 row-end-4 col-start-1 col-end-5 responsive-img" />
-                        <img src="/Hero-img2.png" alt="Image 2" style={{ width: '90%', height: 'auto' }} className="col-start-3 col-end-6 row-start-3 row-end-5 responsive-img" />
+                                `}
+                            </style>
+                            <img src="/Hero-img1.png" alt="Image 1" style={{ width: '80%', height: 'auto' }} className="row-start-1 row-end-4 col-start-1 col-end-5 responsive-img" />
+                            <img src="/Hero-img2.png" alt="Image 2" style={{ width: '90%', height: 'auto' }} className="col-start-3 col-end-6 row-start-3 row-end-5 responsive-img" />
+                            
+                        </div>
                     </div>
                 </div>
             </div>
